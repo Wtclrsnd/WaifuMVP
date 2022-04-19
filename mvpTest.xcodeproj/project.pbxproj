@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		72454086280EB9300043D51C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72454085280EB9300043D51C /* AppDelegate.swift */; };
 		72454088280EB9300043D51C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72454087280EB9300043D51C /* SceneDelegate.swift */; };
-		7245408A280EB9300043D51C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72454089280EB9300043D51C /* ViewController.swift */; };
+		7245408A280EB9300043D51C /* WaifuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72454089280EB9300043D51C /* WaifuViewController.swift */; };
 		7245408D280EB9300043D51C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7245408B280EB9300043D51C /* Main.storyboard */; };
 		7245408F280EB93C0043D51C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7245408E280EB93C0043D51C /* Assets.xcassets */; };
 		72454092280EB93C0043D51C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72454090280EB93C0043D51C /* LaunchScreen.storyboard */; };
+		7245409A280EC0D70043D51C /* WaifuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72454099280EC0D60043D51C /* WaifuPresenter.swift */; };
+		7245409C280EC0E70043D51C /* WaifuApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7245409B280EC0E70043D51C /* WaifuApiService.swift */; };
+		7245409E280EC0F60043D51C /* Waifu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7245409D280EC0F60043D51C /* Waifu.swift */; };
+		724540A2280EC2450043D51C /* WaifuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724540A1280EC2450043D51C /* WaifuProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72454082280EB9300043D51C /* mvpTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvpTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72454085280EB9300043D51C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72454087280EB9300043D51C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72454089280EB9300043D51C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72454089280EB9300043D51C /* WaifuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaifuViewController.swift; sourceTree = "<group>"; };
 		7245408C280EB9300043D51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7245408E280EB93C0043D51C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72454091280EB93C0043D51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72454093280EB93C0043D51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72454099280EC0D60043D51C /* WaifuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaifuPresenter.swift; sourceTree = "<group>"; };
+		7245409B280EC0E70043D51C /* WaifuApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaifuApiService.swift; sourceTree = "<group>"; };
+		7245409D280EC0F60043D51C /* Waifu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waifu.swift; sourceTree = "<group>"; };
+		724540A1280EC2450043D51C /* WaifuProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaifuProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,11 @@
 			children = (
 				72454085280EB9300043D51C /* AppDelegate.swift */,
 				72454087280EB9300043D51C /* SceneDelegate.swift */,
-				72454089280EB9300043D51C /* ViewController.swift */,
+				72454089280EB9300043D51C /* WaifuViewController.swift */,
+				724540A1280EC2450043D51C /* WaifuProtocol.swift */,
+				72454099280EC0D60043D51C /* WaifuPresenter.swift */,
+				7245409B280EC0E70043D51C /* WaifuApiService.swift */,
+				7245409D280EC0F60043D51C /* Waifu.swift */,
 				7245408B280EB9300043D51C /* Main.storyboard */,
 				7245408E280EB93C0043D51C /* Assets.xcassets */,
 				72454090280EB93C0043D51C /* LaunchScreen.storyboard */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7245408A280EB9300043D51C /* ViewController.swift in Sources */,
+				7245409E280EC0F60043D51C /* Waifu.swift in Sources */,
+				7245408A280EB9300043D51C /* WaifuViewController.swift in Sources */,
 				72454086280EB9300043D51C /* AppDelegate.swift in Sources */,
 				72454088280EB9300043D51C /* SceneDelegate.swift in Sources */,
+				724540A2280EC2450043D51C /* WaifuProtocol.swift in Sources */,
+				7245409C280EC0E70043D51C /* WaifuApiService.swift in Sources */,
+				7245409A280EC0D70043D51C /* WaifuPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
