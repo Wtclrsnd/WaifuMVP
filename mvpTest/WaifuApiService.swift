@@ -28,6 +28,7 @@ final class WaifuApiService {
                     Waifu.self,
                     from: data
                 )
+                print(responseObject)
                 completion(responseObject)
             } catch let error {
                 print(String(describing: error.localizedDescription))

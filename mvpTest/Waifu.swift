@@ -8,5 +8,5 @@
 import Foundation
 
 struct Waifu: Codable {
-    let urlString: String?
+    let url: String
 }
