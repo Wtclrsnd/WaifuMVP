@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class WaifuApiService {
+final class WaifuApiService: WaifuServiceProtocol {
     func getRandomWaifu(completion: @escaping (Waifu) -> Void) {
         let urlString = "https://api.waifu.pics/sfw/waifu"
         guard let url = URL(string: urlString) else { return }

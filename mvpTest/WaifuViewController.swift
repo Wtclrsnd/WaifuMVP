@@ -45,7 +45,7 @@ final class WaifuViewController: UIViewController, WaifuProtocol {
     func displayWaifu(waifu: UIImage) {
         imageView.image = waifu
     }
-    
+
     private func setUpUI() {
         view.backgroundColor = .systemBackground
         view.addSubview(imageView)
@@ -58,7 +58,7 @@ final class WaifuViewController: UIViewController, WaifuProtocol {
         imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100).isActive = true
 
-        waifuButton.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: -50).isActive = true
+        waifuButton.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 30).isActive = true
         waifuButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
         waifuButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant:  -50).isActive = true
     }

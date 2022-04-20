@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class WaifuPresenter {
+final class WaifuPresenter: WaifuPresentationProtocol {
     private var waifuService: WaifuApiService
     weak var viewDelegate: WaifuProtocol?
 
